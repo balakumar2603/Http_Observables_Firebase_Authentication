@@ -7,7 +7,7 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'myfirsthttp';
+  title = 'Http_Observable_Firebase_Authentication'
   constructor(public _auth: AuthService) {}
   ngOnInit() {
     const firebaseConfig = {

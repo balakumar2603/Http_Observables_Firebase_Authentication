@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myfirsthttp": {
+    "Http_Observable_Firebase_Authentication": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myfirsthttp",
+            "outputPath": "dist/Http_Observable_Firebase_Authentication",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "myfirsthttp:build:production"
+              "browserTarget": "Http_Observable_Firebase_Authentication:build:production"
             },
             "development": {
-              "browserTarget": "myfirsthttp:build:development"
+              "browserTarget": "Http_Observable_Firebase_Authentication:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myfirsthttp:build"
+            "browserTarget": "Http_Observable_Firebase_Authentication:build"
           }
         },
         "test": {
