@@ -1,0 +1,41 @@
+<div class="container">
+  <div  class="row">
+    <form [formGroup]="bookForm" >
+    <div class="row col-sm-5">
+      <h3>My First Http</h3>
+      <br>
+      <div class="form-group">
+        <label for="bookid">Book Id</label>
+        <input type="text" id="bookid" name="bookid" formControlName="bookid" class="form-control" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="bookname">Book Name</label>
+        <input type="text" id="bookname" name="bookname" formControlName="bookname" class="form-control" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="bookauthor">Book Author</label>
+        <input type="text" id="bookauthor" name="bookauthor" formControlName="bookauthor" class="form-control" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-info" (click)="onPushBook()" [disabled]="!bookForm.valid">Push Book</button>
+        <button class="btn btn-warn" (click)="onSave()" [disabled]="!bookForm.valid">Save</button>
+        <button class="btn btn-info" (click)="onGet()" >Get</button>
+      </div>
+       <table>
+        <tr><td>Book Id</td><td>Book Name</td><td>Author</td></tr>
+        <tr *ngFor="let obj of myBooks">
+          <td >
+              {{obj.bookid}}
+          </td>
+              <td >
+                {{obj.bookname}}
+              </td>
+                <td >
+                  {{obj.bookauthor}}
+                </td>
+          </tr>
+       </table>
+    </div><!--Inner row Ends-->
+  </form>
+  </div><!-- Outer row Ends -->
+</div>

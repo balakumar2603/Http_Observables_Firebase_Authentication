@@ -1,0 +1,24 @@
+<div class="container">
+<div  class="row">
+  <form [formGroup]="loginForm" >
+    <div class="row col-sm-5">
+      <h3>Login</h3>
+      <br>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" formControlName="email" class="form-control" autocomplete="off">
+        <span class="help-block" *ngIf="loginForm.hasError('required')">Please Enter a valid email!.</span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" formControlName="password" class="form-control" autocomplete="off">
+        <span class="help-block" *ngIf="loginForm.hasError('required')">Please Enter a Password!.</span>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-info" (click)="onLogin()" [disabled]="!loginForm.valid">Login</button>
+      </div>
+    </div><!--Inner row Ends-->
+  </form>
+</div><!-- Outer row Ends -->
+</div>
+
