@@ -1,4 +1,4 @@
-# Myfirsthttp
+# Http_Observables_firebase_authentication
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
